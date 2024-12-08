@@ -26,7 +26,7 @@ const blogPosts = [
 
 export default function Blog(){
     return(
-        <div className=" bg-black pt-7 h-[500px]">
+        <div className=" bg-black pt-5  h-[500px]">
       {/* Blog Post Section */}
       <section className=" mx-auto px-4 mb-16">
       <h3 className="text-orange-500 text-center font-mono text-2xl mb-2">Blog Post</h3>

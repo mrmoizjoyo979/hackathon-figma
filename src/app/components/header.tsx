@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { FaSearch, FaShoppingBag } from 'react-icons/fa'
+import { VscAccount } from "react-icons/vsc";
 
 export function Header() {
   return (
@@ -41,8 +42,8 @@ export function Header() {
               />
               <FaSearch className="absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-zinc-400" />
             </div>
-            <button className="text-white hover:text-white/80">
-              <FaShoppingBag className="h-5 w-5" />
+            <button className="flex text-white hover:text-white/80">
+              <FaShoppingBag className=" h-5 w-5" />
               <span className="sr-only">Shopping Cart</span>
             </button>
           </div>
