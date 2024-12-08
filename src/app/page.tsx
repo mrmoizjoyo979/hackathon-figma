@@ -1,101 +1,97 @@
-import Image from "next/image";
+import Image from 'next/image'
 
-export default function Home() {
+export default function Banner() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="bg-black text-white min-h-screen">
+      <section className="container mx-auto px-4 py-10">
+        <div className="flex flex-col md:flex-row items-center">
+          <div className="md:w-1/2">
+            <h2 className="text-orange-500 text-xl mb-2 font-mono">The Quick & Amazing!</h2>
+            <span className="text-4xl text-orange-500 md:text-6xl font-bold font-sans mb-4">
+              Th
+            </span>
+            <span className="text-4xl  md:text-6xl font-bold font-sans mb-4">
+              e Art of speed Food Quality
+            </span>
+            <p className="mb-8 pt-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Vivamus sed pharetra dictum neque massa congue.
+            </p>
+            <div className='text-left'>
+            <button className='bg-orange-500 rounded-full text-xl '><p className='pt-1 py-1 px-3 '>See Menu</p></button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          </div>
+          
+          <div className="md:w-1/2">
+            <Image
+              src="/banner.png"
+              alt="Delicious food plate"
+              width={500}
+              height={500}
+              className="rounded-full"
+            />
+          </div>
+        </div>
+        
+      </section>
+
+      <section className="bg-black py-16">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="md:w-1/2 mb-8 md:mb-0">
+              <h2 className="text-orange-500 text-xl mb-2">About us</h2>
+              <span className="text-3xl text-orange-500 md:text-5xl font-bold mb-4">
+                We
+              </span>
+              <span className="text-3xl md:text-5xl px-3  font-bold mb-4">
+                 Create the best foody product
+              </span>
+              <p className="mb-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam 
+                pellentesque bibendum non dui volutpat fringilla bibendum. Urna, elit 
+                augue urna, vitae feugiat pretium donec id elementum. Ultrices mattis 
+                sed vitae mus risus. Lacus nisi, et ac dapibus sit eu velit in 
+                consequat.
+              </p>
+              
+              <ul className="space-y-2">
+                <li className="flex items-center">
+                  <svg className="w-4 h-4 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Lacus nisi, et ac dapibus sit eu velit in consequat.
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-4 h-4 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Quisque diam pellentesque bibendum non dui volutpat fringilla
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-4 h-4 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </li>
+              </ul>
+              <div className='pt-3 text-left'>
+            <button className=' bg-orange-500 rounded-full text-sm '><p className='pt-3 py-3 px-5 '>Read More</p></button>
+        </div>
+            </div>
+            <div className="md:w-1/2 grid grid-cols-1 gap-4">
+              <Image src="/bannerimg2.png" alt="Food image 1" width={700} height={200} className="rounded-lg px-14" /><br/>
+              {/* <Image src="" alt="Food image 2" width={300} height={200} className="rounded-lg" /> */}
+              <div className='flex px-14 gap-4'>
+              <Image src="/bannerimg3.png" alt="Food image 3" width={180} height={120} className="rounded-lg" />
+              <Image src="/bannerimg4.png" alt="Food image 4" width={180} height={120} className="rounded-lg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
     </div>
-  );
+  )
 }
+
